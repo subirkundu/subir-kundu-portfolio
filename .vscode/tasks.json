@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Portfolio: Run development server",
+      "type": "shell",
+      "command": "pnpm dev",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "nextjs",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "file": 1,
+          "location": 1,
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting",
+          "endsPattern": "Ready"
+        }
+      }
+    },
+    {
+      "label": "Portfolio: Production build",
+      "type": "shell",
+      "command": "pnpm build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Portfolio: Run Playwright tests",
+      "type": "shell",
+      "command": "pnpm test:e2e",
+      "problemMatcher": []
+    }
+  ]
+}

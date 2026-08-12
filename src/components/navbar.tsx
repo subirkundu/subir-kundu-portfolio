@@ -1,0 +1,6 @@
+"use client";
+import Link from "next/link";
+import { Download, Menu, X } from "lucide-react";
+import { useState } from "react";
+const links = [{ href: "/", label: "Home" }, { href: "/about", label: "About" }, { href: "/journey", label: "Journey" }, { href: "/projects", label: "Projects" }, { href: "/contact", label: "Contact" }];
+export function Navbar() { const [open, setOpen] = useState(false); return <header id="top" className="header"><div className="container nav"><Link href="/" className="brand" onClick={() => setOpen(false)}><span className="brand-mark">SK</span><span>Subir Kundu<small>QA Engineer</small></span></Link><nav className={open ? "nav-links open" : "nav-links"} aria-label="Main navigation">{links.map(l => <Link href={l.href} key={l.href} onClick={() => setOpen(false)}>{l.label}</Link>)}<a className="nav-cv mobile-cv" href="/resume/subir-kundu-cv.pdf" download><Download size={16}/>Download CV</a></nav><a className="nav-cv desktop-cv" href="/resume/subir-kundu-cv.pdf" download><Download size={16}/>Download CV</a><button className="menu-toggle" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X/> : <Menu/>}</button></div></header>; }
