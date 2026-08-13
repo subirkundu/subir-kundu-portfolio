@@ -645,8 +645,8 @@ button:focus-visible {
 }
 
 /* =========================================================
-   PROFESSIONAL CERTIFICATION CARD
-   ========================================================= */
+   PROFESSIONAL CERTIFICATION CARD — HOME PAGE
+========================================================= */
 
 .cert-card {
   position: relative;
@@ -853,7 +853,7 @@ button:focus-visible {
 
 /* =========================================================
    FOOTER
-   ========================================================= */
+========================================================= */
 
 .footer {
   border-top: 1px solid var(--line);
@@ -1284,33 +1284,23 @@ button:focus-visible {
 
   .menu-toggle {
     display: block;
-
     color: var(--text);
-
     border: 0;
-
     background: transparent;
   }
 
   .nav-links.open {
     display: flex;
-
     flex-direction: column;
-
     position: absolute;
-
     inset: 76px 0 auto;
-
     padding: 22px 16px;
-
     background: #0a0f11;
-
     border-bottom: 1px solid var(--line);
   }
 
   .mobile-cv {
     display: inline-flex;
-
     align-self: flex-start;
   }
 
@@ -1322,7 +1312,6 @@ button:focus-visible {
   .hero-grid,
   .home-lower {
     grid-template-columns: 1fr;
-
     gap: 34px;
   }
 
@@ -1348,7 +1337,6 @@ button:focus-visible {
   .footer-top,
   .footer-bottom {
     align-items: flex-start;
-
     flex-direction: column;
   }
 
@@ -1356,12 +1344,9 @@ button:focus-visible {
     margin-bottom: 50px;
   }
 
-  /* Footer - tablet/mobile */
   .footer-cta {
     align-items: flex-start;
-
     flex-direction: column;
-
     padding: 15px;
   }
 
@@ -1379,23 +1364,18 @@ button:focus-visible {
 
   .footer-bottom {
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 10px;
   }
 
   .footer-motto {
     order: 1;
-
     justify-self: auto;
   }
 
   .back-to-top {
     order: 2;
-
     justify-self: auto;
   }
 
@@ -1429,7 +1409,7 @@ button:focus-visible {
 
   /* =========================================================
      HOW I APPROACH QUALITY — MOBILE
-     ========================================================= */
+  ========================================================= */
 
   .approach {
     padding: 12px 10px 14px;
@@ -1437,58 +1417,41 @@ button:focus-visible {
 
   .approach-title {
     margin-bottom: 12px;
-
     font-size: 0.72rem;
   }
 
   .approach-steps {
     display: grid;
-
     grid-template-columns: repeat(
       2,
       minmax(0, 1fr)
     );
-
     column-gap: 8px;
-
     row-gap: 8px;
-
     width: 100%;
   }
 
   .approach-item {
     position: relative;
-
     display: block;
-
     width: 100%;
-
     height: 82px;
-
     min-width: 0;
-
     padding: 7px 5px;
 
     border: 1px solid rgba(38, 52, 57, 0.7);
-
     border-radius: 9px;
-
     background: rgba(12, 19, 23, 0.72);
   }
 
   .approach-step {
     width: 100%;
-
     height: 100%;
-
     min-width: 0;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -1496,32 +1459,24 @@ button:focus-visible {
 
   .step-icon {
     width: 38px;
-
     height: 38px;
-
     flex-shrink: 0;
-
     margin: 0 auto 6px;
   }
 
   .approach-step p {
     margin: 0;
-
     font-size: 0.55rem;
-
     line-height: 1.2;
-
     text-align: center;
   }
 
-  /* Horizontal arrow between the two cards in each row */
   .approach-item:nth-child(odd)::after {
     content: "›";
 
     position: absolute;
 
     top: 50%;
-
     right: -8px;
 
     transform: translateY(-50%);
@@ -1531,25 +1486,21 @@ button:focus-visible {
     color: var(--accent);
 
     font-size: 1.35rem;
-
     line-height: 1;
-
     font-weight: 300;
   }
 
-  /* No vertical arrows on mobile */
   .approach-item::before {
     content: none;
   }
 
-  /* Hide the original JSX arrows on mobile */
   .approach-arrow {
     display: none;
   }
 
   /* =========================================================
      PROFILE CARD
-     ========================================================= */
+  ========================================================= */
 
   .profile-card {
     min-height: 470px;
@@ -1557,17 +1508,13 @@ button:focus-visible {
 
   .profile-image {
     background-size: auto 100%;
-
     background-position: center -22px;
   }
 
   .profile-overlay {
     left: 12px;
-
     right: 12px;
-
     bottom: 12px;
-
     padding: 14px;
   }
 
@@ -1581,7 +1528,7 @@ button:focus-visible {
 
   /* =========================================================
      NAVIGATION
-     ========================================================= */
+  ========================================================= */
 
   .nav {
     min-height: 68px;
@@ -1597,21 +1544,12 @@ button:focus-visible {
 
   .brand-mark {
     width: 34px;
-
     height: 34px;
   }
 
   /* =========================================================
-     HERO
-     ========================================================= */
-
-  .hero-actions .button {
-    width: 100%;
-  }
-
-  /* =========================================================
-     CERTIFICATION CARD — MOBILE
-     ========================================================= */
+     HOME CERTIFICATION CARD — MOBILE
+  ========================================================= */
 
   .cert-card {
     padding: 20px 16px;
@@ -1623,22 +1561,18 @@ button:focus-visible {
 
   .cert-card-main {
     display: flex;
-
     align-items: center;
-
     gap: 16px;
   }
 
   .cert-card-icon {
     width: 92px;
     height: 92px;
-
     flex-shrink: 0;
   }
 
   .cert-card-icon svg {
     width: 42px;
-
     height: 42px;
   }
 
@@ -1648,29 +1582,24 @@ button:focus-visible {
 
   .cert-card-content h3 {
     font-size: 1.35rem;
-
     line-height: 1.12;
-
     letter-spacing: -0.03em;
   }
 
   .cert-card-content p {
     font-size: 0.72rem;
-
     line-height: 1.5;
   }
 
   .cert-card-button {
     margin-top: 22px;
-
     min-height: 44px;
-
     font-size: 0.7rem;
   }
 
   /* =========================================================
      FOOTER — MOBILE REDESIGN
-     ========================================================= */
+  ========================================================= */
 
   .footer {
     padding: 28px 0 22px;
@@ -1678,15 +1607,11 @@ button:focus-visible {
 
   .footer-cta {
     position: relative;
-
     display: block;
-
     min-height: auto;
-
     padding: 26px 20px 20px;
 
     border: 1px solid #3b7f3f;
-
     border-radius: 12px;
 
     background:
@@ -1702,23 +1627,17 @@ button:focus-visible {
 
   .footer-cta-content {
     display: flex;
-
     align-items: flex-start;
-
     width: 100%;
-
     gap: 14px;
   }
 
   .footer-cta-icon {
     width: 42px;
-
     height: 42px;
-
     flex-shrink: 0;
 
     display: grid;
-
     place-items: center;
 
     border-radius: 50%;
@@ -1739,11 +1658,8 @@ button:focus-visible {
     color: #f2f6f4;
 
     font-size: 0.82rem;
-
     line-height: 1.35;
-
     font-weight: 800;
-
     letter-spacing: 0.015em;
 
     text-transform: uppercase;
@@ -1755,7 +1671,6 @@ button:focus-visible {
     color: #9eadaa;
 
     font-size: 0.68rem;
-
     line-height: 1.5;
   }
 
@@ -1786,13 +1701,11 @@ button:focus-visible {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 9px 10px;
 
     border: 1px solid #26383a;
-
     border-radius: 8px;
 
     background: rgba(5, 12, 15, 0.38);
@@ -1800,7 +1713,6 @@ button:focus-visible {
     color: #c6d0cd;
 
     font-size: 0.68rem;
-
     font-weight: 750;
 
     text-transform: uppercase;
@@ -1814,13 +1726,12 @@ button:focus-visible {
 
   .footer-cta .socials a:hover {
     border-color: var(--accent);
-
     color: var(--accent);
   }
 
   /* =========================================================
      FOOTER BOTTOM
-     ========================================================= */
+  ========================================================= */
 
   .footer-bottom {
     position: relative;
@@ -1846,9 +1757,7 @@ button:focus-visible {
     position: absolute;
 
     top: 0;
-
     left: 0;
-
     right: 0;
 
     height: 1px;
@@ -1872,9 +1781,7 @@ button:focus-visible {
       );
   }
 
-  /* =========================================================
-     QUALITY MESSAGE
-     ========================================================= */
+  /* QUALITY MESSAGE */
 
   .footer-motto {
     order: 1;
@@ -1906,19 +1813,15 @@ button:focus-visible {
     position: absolute;
 
     left: 0;
-
     top: 0;
 
     color: var(--accent);
 
     font-size: 1.35rem;
-
     line-height: 1;
   }
 
-  /* =========================================================
-     BACK TO TOP
-     ========================================================= */
+  /* BACK TO TOP */
 
   .back-to-top {
     order: 2;
@@ -1932,13 +1835,11 @@ button:focus-visible {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 8px;
 
     border: 1px solid var(--accent);
-
     border-radius: 10px;
 
     color: var(--accent);
@@ -1956,9 +1857,7 @@ button:focus-visible {
     background: rgba(116, 245, 61, 0.08);
   }
 
-  /* =========================================================
-     COPYRIGHT
-     ========================================================= */
+  /* COPYRIGHT */
 
   .footer-bottom > span:first-child {
     order: 3;
@@ -1988,9 +1887,7 @@ button:focus-visible {
     position: absolute;
 
     top: 0;
-
     left: 0;
-
     right: 0;
 
     height: 1px;
@@ -2020,11 +1917,9 @@ button:focus-visible {
     position: absolute;
 
     left: 0;
-
     top: 34px;
 
     width: 38px;
-
     height: 38px;
 
     display: grid;
@@ -2039,10 +1934,6 @@ button:focus-visible {
 
     font-size: 0.95rem;
   }
-
-  /* =========================================================
-     CONTACT
-     ========================================================= */
 
   .contact-cta h2 {
     font-size: 1.35rem;
@@ -2062,5 +1953,534 @@ button:focus-visible {
     transition-duration: 0.01ms !important;
 
     animation-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================
+   CERTIFICATIONS PAGE
+   FINAL APPROVED DESIGN
+========================================================= */
+
+.certifications-page {
+  width: 100%;
+}
+
+/* =========================
+   CERTIFICATION HERO
+========================= */
+
+.certifications-page .certifications-hero {
+  padding: 72px 0 46px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.certifications-page .certifications-hero h1 {
+  margin: 0;
+
+  max-width: 1000px;
+
+  color: var(--text);
+
+  font-size: clamp(3rem, 5.4vw, 5rem);
+
+  font-weight: 800;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.certifications-page .certifications-hero-copy {
+  max-width: 720px;
+
+  margin: 22px 0 0;
+
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.65;
+}
+
+/* =========================
+   CERTIFICATION CONTENT
+========================= */
+
+.certifications-page .certifications-section {
+  padding: 28px 0 34px;
+}
+
+.certifications-page .certifications-header {
+  margin-bottom: 22px;
+}
+
+.certifications-page .certification-count {
+  margin: 0;
+
+  color: #d6dfdd;
+
+  font-size: 0.78rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.certifications-page .certification-count span {
+  color: var(--accent);
+}
+
+/* =========================
+   CERTIFICATE LIST
+========================= */
+
+.certifications-page .certifications-list {
+  display: grid;
+
+  gap: 12px;
+}
+
+/* =========================
+   CERTIFICATE CARD
+========================= */
+
+.certifications-page .certification-item {
+  display: grid;
+
+  grid-template-columns: 112px minmax(0, 1fr) auto;
+
+  align-items: center;
+
+  column-gap: 24px;
+
+  min-height: 172px;
+
+  padding: 22px;
+
+  background:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(116, 245, 61, 0.055),
+      transparent 27%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(16, 25, 29, 0.97),
+      rgba(9, 16, 19, 0.98)
+    );
+
+  border: 1px solid var(--line);
+
+  border-radius: 16px;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.certifications-page .certification-item:hover {
+  border-color: #3d7541;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   TEMPORARY CERTIFICATE MARK
+========================= */
+
+.certifications-page .certification-mark {
+  width: 94px;
+
+  height: 108px;
+
+  display: grid;
+
+  place-items: center;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f3f5f4,
+      #e5ebe8
+    );
+
+  border: 1px solid #cfd8d5;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.certifications-page .certification-mark span {
+  color: #164f79;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 1.02rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+
+  text-align: center;
+}
+
+/* NASA temporary visual */
+.certifications-page
+.certification-item:nth-child(2)
+.certification-mark {
+  background:
+    radial-gradient(
+      circle at center,
+      #274fa4 0 34%,
+      #f2f3f4 35% 39%,
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #f4f6f6,
+      #e3e8e7
+    );
+}
+
+.certifications-page
+.certification-item:nth-child(2)
+.certification-mark span {
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 0.9rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.05em;
+
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   CERTIFICATE DETAILS
+========================= */
+
+.certifications-page .certification-details {
+  min-width: 0;
+}
+
+.certifications-page .certification-details h2 {
+  margin: 0 0 13px;
+
+  color: var(--text);
+
+  font-size: 1.25rem;
+
+  font-weight: 750;
+
+  line-height: 1.32;
+
+  letter-spacing: -0.02em;
+}
+
+.certifications-page .certification-organization,
+.certifications-page .certification-date {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.82rem;
+
+  line-height: 1.5;
+}
+
+.certifications-page .certification-date {
+  margin-top: 8px;
+}
+
+.certifications-page .certification-organization svg,
+.certifications-page .certification-date svg {
+  flex-shrink: 0;
+
+  color: #c2cdca;
+}
+
+/* =========================
+   VIEW CERTIFICATE
+========================= */
+
+.certifications-page .certification-action {
+  justify-self: end;
+}
+
+.certifications-page .view-certificate {
+  min-width: 184px;
+
+  min-height: 46px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  color: var(--accent);
+
+  background: rgba(116, 245, 61, 0.015);
+
+  border: 1px solid var(--accent);
+
+  border-radius: 9px;
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.025em;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.certifications-page .view-certificate:hover {
+  background: var(--accent);
+
+  color: #081008;
+
+  box-shadow:
+    0 0 22px rgba(116, 245, 61, 0.14);
+}
+
+/* =========================
+   LEARNING MESSAGE
+========================= */
+
+.certifications-page .certification-learning {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 22px;
+
+  padding: 18px 24px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15, 29, 24, 0.88),
+      rgba(10, 16, 19, 0.96)
+    );
+}
+
+.certifications-page .certification-learning-icon {
+  width: 52px;
+
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--accent);
+
+  border: 1px solid #3d7541;
+
+  background:
+    rgba(116, 245, 61, 0.055);
+}
+
+.certifications-page .certification-learning-content {
+  min-width: 0;
+}
+
+.certifications-page .certification-learning h3 {
+  margin: 0 0 4px;
+
+  color: var(--text);
+
+  font-size: 0.95rem;
+
+  line-height: 1.45;
+}
+
+.certifications-page .certification-learning p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.8rem;
+}
+
+/* =========================================================
+   CERTIFICATIONS PAGE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .certifications-page .certifications-hero {
+    padding: 64px 0 40px;
+  }
+
+  .certifications-page .certification-item {
+    grid-template-columns: 92px minmax(0, 1fr);
+
+    column-gap: 20px;
+
+    row-gap: 16px;
+  }
+
+  .certifications-page .certification-mark {
+    width: 82px;
+
+    height: 96px;
+  }
+
+  .certifications-page .certification-action {
+    grid-column: 2;
+
+    justify-self: start;
+  }
+}
+
+/* =========================================================
+   CERTIFICATIONS PAGE — MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+  .certifications-page .certifications-hero {
+    padding: 48px 0 30px;
+  }
+
+  .certifications-page .certifications-hero h1 {
+    font-size: clamp(2.35rem, 11vw, 3.5rem);
+
+    line-height: 0.98;
+  }
+
+  .certifications-page .certifications-hero-copy {
+    margin-top: 18px;
+
+    font-size: 0.78rem;
+
+    line-height: 1.62;
+  }
+
+  .certifications-page .certifications-section {
+    padding: 18px 0 28px;
+  }
+
+  .certifications-page .certifications-header {
+    margin-bottom: 14px;
+  }
+
+  .certifications-page .certification-count {
+    font-size: 0.7rem;
+  }
+
+  .certifications-page .certifications-list {
+    gap: 10px;
+  }
+
+  .certifications-page .certification-item {
+    grid-template-columns: 1fr;
+
+    min-height: 0;
+
+    gap: 15px;
+
+    padding: 18px;
+  }
+
+  .certifications-page .certification-mark {
+    width: 72px;
+
+    height: 82px;
+  }
+
+  .certifications-page .certification-details h2 {
+    margin-bottom: 11px;
+
+    font-size: 1.05rem;
+
+    line-height: 1.38;
+  }
+
+  .certifications-page .certification-organization,
+  .certifications-page .certification-date {
+    font-size: 0.72rem;
+  }
+
+  .certifications-page .certification-action {
+    grid-column: auto;
+
+    justify-self: stretch;
+
+    width: 100%;
+  }
+
+  .certifications-page .view-certificate {
+    width: 100%;
+
+    min-height: 44px;
+
+    font-size: 0.68rem;
+  }
+
+  .certifications-page .certification-learning {
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 16px;
+
+    padding: 16px;
+  }
+
+  .certifications-page .certification-learning-icon {
+    width: 44px;
+
+    height: 44px;
+  }
+
+  .certifications-page .certification-learning h3 {
+    font-size: 0.82rem;
+
+    line-height: 1.45;
+  }
+
+  .certifications-page .certification-learning p {
+    font-size: 0.7rem;
   }
 }
