@@ -8,6 +8,7 @@ import {
   Rocket,
   RotateCcw,
   SearchCheck,
+  ShieldCheck,
   Target,
 } from "lucide-react";
 
@@ -256,25 +257,34 @@ export default function Home() {
           </div>
 
           {/* CERTIFICATION */}
-          <div className="cert-card">
-            <p className="eyebrow">Certification</p>
+<div className="cert-card">
+  <p className="eyebrow">Certifications</p>
 
-            <div className="certificate-seal">
-              ISTQB
-            </div>
+  <div className="cert-card-main">
+    <div className="cert-card-icon">
+      <ShieldCheck size={52} strokeWidth={1.6} />
+    </div>
 
-            <h3>{certifications[0].name}</h3>
+    <div className="cert-card-content">
+      <h3>
+        Professional <span>Certifications</span>
+      </h3>
 
-            <p>{certifications[0].organization}</p>
+      <p>
+        Industry-recognized certifications that validate my knowledge and
+        commitment to quality assurance and continuous learning.
+      </p>
+    </div>
+  </div>
 
-            <Link
-              className="button secondary"
-              href="/certifications"
-            >
-              View certifications
-              <ArrowRight size={16} />
-            </Link>
-          </div>
+  <Link
+    className="cert-card-button"
+    href="/certifications"
+  >
+    View All Certifications
+    <ArrowRight size={17} />
+  </Link>
+</div>
         </div>
       </section>
 
