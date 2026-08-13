@@ -628,6 +628,68 @@ button:focus-visible {
   padding: 26px;
 }
 
+/* =========================================================
+   QA TOOLBOX HEADER
+   ========================================================= */
+
+.qa-toolbox-card {
+  position: relative;
+}
+
+.qa-toolbox-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.qa-toolbox-heading > div:first-child {
+  min-width: 0;
+}
+
+.qa-toolbox-heading .eyebrow {
+  margin: 0 0 14px;
+}
+
+.qa-toolbox-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.qa-toolbox-icon {
+  width: 110px;
+  height: 86px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  margin-top: -4px;
+
+  color: var(--accent);
+
+  border-radius: 14px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(116, 245, 61, 0.10),
+      rgba(116, 245, 61, 0.02) 65%,
+      transparent 66%
+    );
+}
+
+.qa-toolbox-icon svg {
+  filter: drop-shadow(
+    0 0 10px rgba(116, 245, 61, 0.16)
+  );
+}
+
 .tool-list {
   display: grid;
   gap: 15px;
@@ -1546,6 +1608,30 @@ button:focus-visible {
     width: 34px;
     height: 34px;
   }
+
+  /* =========================================================
+     QA TOOLBOX — MOBILE
+  ========================================================= */
+
+  .qa-toolbox-heading {
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .qa-toolbox-heading h2 {
+    font-size: 1.85rem;
+  }
+
+.qa-toolbox-icon {
+  width: 78px;
+  height: 62px;
+  margin-top: 0;
+}
+
+.qa-toolbox-icon svg {
+  width: 42px;
+  height: 42px;
+}
 
   /* =========================================================
      HOME CERTIFICATION CARD — MOBILE

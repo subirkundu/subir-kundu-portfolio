@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {
   ArrowRight,
+  BriefcaseBusiness,
   Bot,
   Code2,
   MonitorCheck,
@@ -14,11 +15,9 @@ import {
 
 import { projects } from "@/content/projects";
 import { toolbox } from "@/content/skills";
-import { certifications } from "@/content/certifications";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
-import { SocialLinks } from "@/components/social-links";
 
 const approach = [
   {
@@ -130,10 +129,8 @@ export default function Home() {
               role="img"
               aria-label="Professional portrait of Subir Kundu"
             >
-              {/* Your actual transparent profile image */}
               <div className="profile-image" />
 
-              {/* Information panel */}
               <div className="profile-overlay">
                 <h2>SUBIR KUNDU</h2>
 
@@ -193,7 +190,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* =========================
           FEATURED PROJECTS
       ========================== */}
@@ -230,11 +226,18 @@ export default function Home() {
       <section className="section">
         <div className="container home-lower">
           {/* QA TOOLBOX */}
-          <div className="tool-group">
-            <SectionHeading
-              eyebrow="Capabilities"
-              title="QA toolbox"
-            />
+          <div className="tool-group qa-toolbox-card">
+            <div className="qa-toolbox-heading">
+              <div>
+                <p className="eyebrow">Capabilities</p>
+
+                <h2>QA toolbox</h2>
+              </div>
+
+              <div className="qa-toolbox-icon" aria-hidden="true">
+                <BriefcaseBusiness size={58} strokeWidth={1.6} />
+              </div>
+            </div>
 
             {toolbox.slice(0, 5).map((group) => (
               <div className="tool-list" key={group.title}>
@@ -257,37 +260,40 @@ export default function Home() {
           </div>
 
           {/* CERTIFICATION */}
-<div className="cert-card">
-  <p className="eyebrow">Certifications</p>
+          <div className="cert-card">
+            <p className="eyebrow">Certifications</p>
 
-  <div className="cert-card-main">
-    <div className="cert-card-icon">
-      <ShieldCheck size={52} strokeWidth={1.6} />
-    </div>
+            <div className="cert-card-main">
+              <div className="cert-card-icon">
+                <ShieldCheck
+                  size={52}
+                  strokeWidth={1.6}
+                />
+              </div>
 
-    <div className="cert-card-content">
-      <h3>
-        Professional <span>Certifications</span>
-      </h3>
+              <div className="cert-card-content">
+                <h3>
+                  Professional <span>Certifications</span>
+                </h3>
 
-      <p>
-        Industry-recognized certifications that validate my knowledge and
-        commitment to quality assurance and continuous learning.
-      </p>
-    </div>
-  </div>
+                <p>
+                  Industry-recognized certifications that validate my
+                  knowledge and commitment to quality assurance and continuous
+                  learning.
+                </p>
+              </div>
+            </div>
 
-  <Link
-    className="cert-card-button"
-    href="/certifications"
-  >
-    View All Certifications
-    <ArrowRight size={17} />
-  </Link>
-</div>
+            <Link
+              className="cert-card-button"
+              href="/certifications"
+            >
+              View All Certifications
+              <ArrowRight size={17} />
+            </Link>
+          </div>
         </div>
       </section>
-
     </>
   );
 }
