@@ -154,7 +154,6 @@ export default function Home() {
       {/* =========================
           QUALITY APPROACH
       ========================== */}
-
       <section className="section approach-section">
         <div className="container">
           <div className="approach card">
@@ -264,23 +263,23 @@ export default function Home() {
             <p className="eyebrow">Certifications</p>
 
             <div className="cert-card-main">
-              <div className="cert-card-icon">
-                <ShieldCheck
-                  size={52}
-                  strokeWidth={1.6}
-                />
-              </div>
-
               <div className="cert-card-content">
                 <h3>
-                  Professional <span>Certifications</span>
+                  Professional
+                  <br />
+                  <span>Certifications</span>
                 </h3>
 
                 <p>
-                  Industry-recognized certifications that validate my
-                  knowledge and commitment to quality assurance and continuous
-                  learning.
+                  Industry-recognized certifications that demonstrate my QA expertise, commitment to quality, and dedication to continuous professional development.
                 </p>
+              </div>
+
+              <div className="cert-card-icon" aria-hidden="true">
+                <ShieldCheck
+                  size={58}
+                  strokeWidth={1.6}
+                />
               </div>
             </div>
 
