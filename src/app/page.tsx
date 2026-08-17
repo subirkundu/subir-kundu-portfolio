@@ -142,7 +142,7 @@ export default function Home() {
                   <span>API Testing</span>
                   <span>Quality Engineering</span>
                   <span className="profile-status">
-                    STATUS: READY TO TESTING
+                    STATUS: READY TO TEST
                   </span>
                 </div>
               </div>
