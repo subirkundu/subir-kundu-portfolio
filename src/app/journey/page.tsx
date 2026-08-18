@@ -1,3 +1,40 @@
 import { PageHero } from "@/components/page-hero";
 import { experience } from "@/content/experience";
-export default function Journey() { return <><PageHero eyebrow="Journey" title="Growing with every release." intro="A career path shaped by hands-on testing, continuous learning, and a commitment to quality engineering."/><section className="section"><div className="container timeline">{experience.map(item=><article className={`timeline-item ${item.future ? "future" : ""}`} key={item.role+item.company}><span className="period">{item.period}</span><h2>{item.role}</h2><h3>{item.company}</h3><p>{item.description}</p></article>)}</div></section></>; }
+
+export default function Journey() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Journey"
+        title="Growing with every release."
+        intro="A career path shaped by hands-on testing, continuous learning, and a commitment to quality engineering."
+      />
+
+      <section className="section">
+        <div className="container timeline">
+          {experience.map((item) => (
+            <article
+              className={`timeline-item ${item.future ? "future" : ""}`}
+              key={item.role + item.company}
+            >
+              <span className="period">{item.period}</span>
+
+              <h2>{item.role}</h2>
+
+              <h3>{item.company}</h3>
+
+              <p>
+                {item.description.split("\n").map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
