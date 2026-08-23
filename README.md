@@ -28,10 +28,4 @@ pnpm build
 pnpm test:e2e
 ```
 
-Before the first browser-test run, install its local browser binary:
-
-```bash
-pnpm exec playwright install chromium
-```
-
 Content is intentionally maintained in `src/content`. Contact links and the downloadable resume are configured in `src/content/profile.ts` and `public/resume/` respectively. The project is ready to deploy to Vercel.
