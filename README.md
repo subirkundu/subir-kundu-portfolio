@@ -21,4 +21,4 @@ subirkundu-portfolio
 
 The included VS Code tasks let you run the development server, production build, and Playwright suite from **Terminal → Run Task**. Install the recommended extensions when VS Code prompts you.
 
-Content is intentionally maintained in `src/content`. Contact links and the downloadable resume are configured in `src/content/profile.ts` and `public/resume/` respectively. The project is ready to deploy to Vercel.
+Content is intentionally maintained in `src/content`. Contact links and the downloadable resume are configured in `src/content/profile.ts` and `public/resume/` respectively. The project is deployed to Vercel.
