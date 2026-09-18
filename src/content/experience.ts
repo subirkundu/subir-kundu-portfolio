@@ -4,7 +4,7 @@ export const experience = [
     company: "BRAC IT",
     period: "Present Role | September 2026 - Current",
     description: `• Confirmed upcoming position. Responsibilities and project details will be added after joining.
-• Test Text will add later.`,
+• Prepared and executed Smoke, Sanity, Functional, Integration, Regression for Microfiance Services`,
 
     future: true,
   },
