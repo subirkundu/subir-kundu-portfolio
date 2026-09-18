@@ -1,6 +1,6 @@
 # Subir Kundu - Software QA Engineer Portfolio
 
-A professional, QA-focused portfolio built with Next.js, TypeScript, a centralized CSS design system, Framer Motion, Lucide Icons, and Playwright.
+A professional, QA-focused portfolio built with Next.js, TypeScript, a centralized CSS design system, Framer Motion, Lucide Icons.
 
 ## Run locally
 
