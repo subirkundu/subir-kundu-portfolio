@@ -3,7 +3,7 @@ export const experience = [
     role: "SQA Engineer",
     company: "BRAC IT",
     period: "Present Role | September 2026 - Current",
-    description: `• Confirmed upcoming position. Responsibilities and project details will be added after joining.
+    description: `• Prepared and executed Smoke, Sanity, Functional, Integration, Regression for Microfiance Services.
 • Prepared and executed Smoke, Sanity, Functional, Integration, Regression for Microfiance Services`,
 
     future: true,
